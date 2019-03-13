@@ -1,0 +1,65 @@
+.headNav {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  background-color: #fdf7ef;
+  overflow-x: hidden;
+  z-index: 99;
+}
+
+.headNav a {
+  color: #f9a2a2;
+  height: 100%;
+  padding-top: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 28px;
+  word-spacing: -5px;
+  font-family: Lao, sans-serif;
+  font-weight: lighter;
+}
+
+.active {
+  background-color:  #ffefe0;
+}
+
+.L{
+  position: absolute;
+  left: 12%;
+}
+
+.C{
+  float: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.R{
+  position: absolute;
+  float: right;
+  right: 12%;
+}
+.headNav a:hover{
+  cursor: pointer;
+}
+
+.headNavText::after {
+  position: relative;
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f9a2a2;
+  transition: width .3s;
+}
+
+.headNavText:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
