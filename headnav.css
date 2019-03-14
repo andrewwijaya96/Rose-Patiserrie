@@ -26,6 +26,7 @@
 
 .active {
   background-color:  #ffefe0;
+  cursor: default;
 }
 
 .L{
@@ -45,11 +46,11 @@
   float: right;
   right: 12%;
 }
-.headNav a:hover{
+.nonactive:hover{
   cursor: pointer;
 }
 
-.headNavText::after {
+.nonactive::after {
   position: relative;
   content: '';
   display: block;
@@ -59,7 +60,7 @@
   transition: width .3s;
 }
 
-.headNavText:hover::after {
+.nonactive:hover::after {
   width: 100%;
   transition: width .3s;
 }
