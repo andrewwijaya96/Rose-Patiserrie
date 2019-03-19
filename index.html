@@ -6,6 +6,7 @@
     <title>Rose Patiserrie</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="headnav.css">
+    <link rel="stylesheet" href="slideshow.css">
     <link rel="stylesheet" href="footer.css">
     <!--<link rel="stylesheet" href="slider.css">-->
     <style media="screen">
@@ -27,71 +28,34 @@
           <a class="headNavText C nonactive">H A M P E R S</a>
           <a class="headNavText R nonactive">C H O U X</a>
         </div>
-   <!--Slider
-   <div id="wrapper">
-   	  <div id="slider-wrap">
-      	  <ul id="slider">
-          	 <li data-color="#1abc9c">
-                <div>
-                    <h3>Slide #1</h3>
-                    <span>Sub-title #1</span>
-                </div>
-                <i class="fa fa-image"></i>
-             </li>
-
-             <li data-color="#3498db">
-                <div>
-                    <h3>Slide #2</h3>
-                    <span>Sub-title #2</span>
-                </div>
-                <i class="fa fa-gears"></i>
-             </li>
-
-             <li data-color="#9b59b6">
-                <div>
-                    <h3>Slide #3</h3>
-                    <span>Sub-title #3</span>
-                </div>
-                <i class="fa fa-sliders"></i>
-             </li>
-
-             <li data-color="#34495e">
-                <div>
-                    <h3>Slide #4</h3>
-                    <span>Sub-title #4</span>
-                </div>
-                <i class="fa fa-code"></i>
-             </li>
-
-             <li data-color="#e74c3c">
-                <div>
-                    <h3>Slide #5</h3>
-                    <span>Sub-title #5</span>
-                </div>
-                <i class="fa fa-microphone-slash"></i>
-             </li>
-
-
-          </ul>
-
-          <div class="btns" id="next"><span class="fa fa-arrow-left">&#8594;</span></div>
-          <div class="btns" id="previous"><span class="fa fa-arrow-right">&#8592;</span></div>
-          <div id="counter"></div>
-
-          <div id="pagination-wrap">
-            <ul>
-            </ul>
-          </div>
-
-      </div>
-
-   </div>-->
+   <!--Slider-->
+   <div class="Slideshow">
+     <!--Gambar 1-->
+     <div class="mySlides slide">
+       <img class="slidePhoto" src="Photos/Slideshow/image1.jpg" alt="Image 1">
+       <div class="text">Caption Text</div>
+     </div>
+     <!--Gambar 2-->
+     <div class="mySlides slide">
+       <img class="slidePhoto" src="Photos/Slideshow/image2.jpeg" alt="Image 2">
+       <div class="text">Caption Text</div>
+     </div>
+     <!--Tombol Prev & Next-->
+     <a class="prev" onclick="plusSlides(-1)"><span class="arrow">&#10094;</span></a>
+     <a class="next" onclick="plusSlides(1)"><span class="arrow">&#10095;</span></a>
+  </div>
+  <!--Tombol Navigasi-->
+  <div style="text-align: center; padding:15px 0px; background-color:rgba(0,0,0,0.8);">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <!--<span class="dot" onclick="currentSlide(3)"></span>-->
+  </div>
 
    <footer>
      <a class="footerText L">A B O U T &nbsp; &nbsp; U S</a>
      <a class="footerText C">C O N T A C T &nbsp; &nbsp; U S</a>
    </footer>
       <!--<script src="jquery-3.3.1.min.js"></script>-->
-   <script src="slider.js"></script>
+   <script src="slideshow.js"></script>
   </body>
 </html>
