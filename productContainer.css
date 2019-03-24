@@ -20,11 +20,23 @@
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(194, 115, 141, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .container:hover .overlay {
   opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .overlay table {
@@ -36,13 +48,10 @@
   position: absolute;
   width: 100%;
   text-align: center;
-  color: white;
-  font-size: 24px;
 }
 
 .productName {
   top: 15%;
-  font-family: "Georgia", serif;
 }
 
 .productPrice {
@@ -57,16 +66,12 @@
   width: 90%;
   height: 20%;
   background-color: transparent;
-  border: 1px solid rgba(237, 200, 205);
+  border: 1px solid green;
   border-radius: 10px;
   cursor: pointer;
   transition-duration: 0.4s;
-  color: white;
-  font-size: 24px;
-  font-weight: 250;
-  word-spacing: -3px;
 }
 
 .buyBut:hover {
-  background-color: rgba(237, 200, 205);
+  background-color: green;
 }
